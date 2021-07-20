@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-1",
+  "version": "1.0.0",
+  "description": "responsive portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashank298/portfolio-1.git"
+  },
+  "keywords": [],
+  "author": "Shashank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashank298/portfolio-1/issues"
+  },
+  "homepage": "https://github.com/shashank298/portfolio-1#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

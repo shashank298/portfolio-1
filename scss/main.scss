@@ -5,6 +5,8 @@ $background-image: url("../img/background.jpg");
 $background-opacity: 0.9;
 
 
+
+
 @mixin easeOut{
     transition: all .5s ease-out;
 }

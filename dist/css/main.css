@@ -47,7 +47,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background-color: #303030;
+    background-color: #444;
     transform: translate3d(0, 100%, 0);
     transition: all .3s ease-out; }
     .menu-branding.show {
@@ -138,7 +138,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -150,3 +150,77 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #eece1a; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job1 {
+    grid-area: job1; }
+  .about-info .job2 {
+    grid-area: job2; }
+  .about-info .job3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #515151;
+    padding: 0.5em;
+    border-bottom: 5px solid #eece1a; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  #about .bio-image {
+    margin-left: 1rem; }
+  .lg-heading,
+  .sm-heading {
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1.25;
+      margin-bottom: 1rem; }
+  .menu-branding,
+  .menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    .menu-branding.show,
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .nav-link,
+    .menu-nav .nav-link {
+      font-size: 18px; }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .potrait {
+      background: url("../img/portrait_small.jpg");
+      height: 150px;
+      width: 150px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
